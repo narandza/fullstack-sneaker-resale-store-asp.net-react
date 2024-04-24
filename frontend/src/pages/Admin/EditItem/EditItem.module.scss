@@ -1,0 +1,21 @@
+@import "../../../styles/variables.scss";
+
+.editItem {
+  margin: 0em 1em;
+
+  .backButton {
+    font-family: $inter;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 1em;
+    cursor: pointer;
+
+    .editHeading {
+      margin-left: 0.5em;
+      font-weight: $standard-bold;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../../styles/variables.scss";
+
+.updateForm {
+  margin: 0em 2em;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .formButton {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 3em;
+  }
+
+  // Sneakers
+
+  .sneakerImages {
+    font-size: 13px;
+
+    .uploadedImages {
+      font-weight: $standard-bold;
+
+      .uploadedImagesContainer {
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2px;
+
+        .uploadedImage {
+          width: 160px;
+        }
+
+        .msg {
+          font-size: 12px;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+
+    .reuploadImages {
+      margin-top: 2em;
+
+      .disclamer {
+        margin: 0em 2em;
+        padding: 1.3em;
+        background-color: $light-grey-color;
+        height: auto;
+        border-radius: $border-radius-big;
+
+        .disclamerExlemation {
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Brands
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+
+    .imagePreview {
+      margin-top: 1em;
+      width: 150px;
+    }
+  }
+
+  // Roles
+
+  .formItem {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+
+    .formLabel {
+      font-size: 18px;
+      font-weight: $standard-bold;
+    }
+
+    .formSelect {
+      margin-left: 2em;
+      width: 10em;
+      height: 2em;
+      border-radius: $border-radius-small;
+      padding: 2px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  // Tickets
+}
+
+@media screen and (min-width: $laptop) {
+  .updateForm {
+    margin: 0em 10em;
+  }
+}

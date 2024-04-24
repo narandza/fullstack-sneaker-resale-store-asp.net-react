@@ -1,0 +1,78 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: darken($color: $white-color, $amount: 0.2);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-content: center;
+  gap: 3em;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  font-size: 13px;
+
+  .fLine {
+    width: 75%;
+    height: 0.5px;
+    background-color: $light-grey-color;
+  }
+
+  .footerTop {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+    padding-left: 0px;
+
+    .topLinks {
+      font-family: $inter;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        &:hover {
+          cursor: pointer;
+          transform: $transform-plus;
+          transition: $transition-ease-in-out;
+        }
+      }
+    }
+  }
+
+  .footerMid {
+    display: flex;
+    gap: 1em;
+
+    .socialIcon {
+      font-size: 15px;
+
+      &:hover {
+        cursor: pointer;
+        transform: $transform-plus;
+        transition: $transition-ease-in-out;
+      }
+    }
+  }
+
+  .footerBottom {
+    font-size: 11px;
+    margin-bottom: 3em;
+  }
+}
+
+// Media Queries
+
+@media screen and (min-width: $small-tablet) {
+}
+
+// large tablets and laptops
+
+@media screen and (min-width: $laptop) {
+}
+
+// desktop styles
+
+@media screen and (min-width: $desktop) {
+}

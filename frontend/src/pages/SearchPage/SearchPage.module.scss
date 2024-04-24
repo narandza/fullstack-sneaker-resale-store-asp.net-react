@@ -1,0 +1,16 @@
+.search {
+  .searchResult {
+    margin: 4em 2em 0em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .showMore {
+    display: flex;
+    margin: 3em 0em 8em;
+    justify-content: center;
+  }
+}

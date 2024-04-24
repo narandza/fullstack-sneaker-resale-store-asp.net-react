@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.mainButton {
+  width: 135px;
+  height: 50px;
+  background-color: $primary-color;
+  border-radius: 10px;
+  border: 0px;
+  color: $secondary-color;
+  font-size: 16px;
+  font-family: $inter;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    transform: $transform-plus;
+    transition: $transition-ease-in-out;
+  }
+
+  &:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
+.sizeButton {
+  width: 40px;
+  height: 40px;
+  border: 1 solid $black-color;
+  border-radius: 10px;
+  background-color: $white-color;
+  font-family: $inter;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    transition: $transition-ease-in-out;
+  }
+}
+
+.selected {
+  color: $white-color;
+  background-color: $primary-color;
+  border-color: $white-color;
+}

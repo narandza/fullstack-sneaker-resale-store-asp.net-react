@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>987e8b55-6a0f-47e8-af9f-6be4e5739d6a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SneakerResaleStore.Application\SneakerResaleStore.Application.csproj" />
+    <ProjectReference Include="..\SneakerResaleStore.DataAccess\SneakerResaleStore.DataAccess.csproj" />
+    <ProjectReference Include="..\SneakerResaleStore.Domain\SneakerResaleStore.Domain.csproj" />
+    <ProjectReference Include="..\SneakerResaleStore.Implementation\SneakerResaleStore.Implementation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\brands\" />
+    <Folder Include="wwwroot\images\sneakers\" />
+  </ItemGroup>
+
+</Project>

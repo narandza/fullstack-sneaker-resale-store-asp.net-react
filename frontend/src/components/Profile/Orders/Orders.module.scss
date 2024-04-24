@@ -1,0 +1,10 @@
+.orders {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .noOrder {
+    display: block;
+    margin: 2em;
+    font-size: 12px;
+  }
+}

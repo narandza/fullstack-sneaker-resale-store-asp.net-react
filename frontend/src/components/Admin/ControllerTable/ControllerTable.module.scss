@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+
+.table {
+  border-collapse: collapse;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 13px;
+  font-family: $inter;
+  text-align: left;
+
+  .thead {
+    background: $primary-color;
+    color: $white-color;
+
+    text-transform: capitalize;
+
+    .tableHeader {
+      border: none;
+      padding: 5px;
+    }
+  }
+
+  .tbody {
+    .tableRow {
+      &:nth-child(even) {
+        background-color: $secondary-color;
+      }
+
+      .tableItem {
+        padding: 9px;
+        min-width: 3em;
+        max-width: 20em;
+
+        .brandLogo {
+          width: 50px;
+        }
+      }
+
+      .actionIcons {
+        font-size: 15px;
+
+        .actionIcon {
+          cursor: pointer;
+
+          &:hover {
+            transform: $transform-plus;
+            transition: $transition-ease-in-out;
+          }
+        }
+
+        .deleteButton {
+          color: $red-error-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+}

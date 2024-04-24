@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+.homePage {
+  position: relative;
+
+  .heroImage {
+    position: relative;
+    top: -$header-hero-vh;
+    z-index: 0;
+    background: $hero-image-MJ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+
+    .heroButton {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .homePageContent {
+    position: relative;
+    top: -100px;
+    margin: 0 1em;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .homePage {
+    .homePageContent {
+      margin: 0 $desktop-side-margin;
+    }
+  }
+}

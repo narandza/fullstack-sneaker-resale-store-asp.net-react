@@ -1,0 +1,170 @@
+@import "../../../styles/variables.scss";
+
+.singleItem {
+  margin: 0em $mobile-side-margin 4em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // Sneaker
+
+  .sneaker {
+    .sneakerHeading {
+      font-size: 18px;
+    }
+
+    .sneakerHeading2 {
+      font-size: 16px;
+    }
+
+    .sneakerData {
+      margin-top: 2em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+
+      .imagesContainer {
+        margin: 2em 0;
+        width: 430px;
+      }
+
+      .sneakerInfo {
+        font-family: $inter;
+        font-size: 17px;
+
+        .sneakerP {
+          margin-top: 1em;
+          text-align: left;
+          font-size: 14px;
+
+          .entryTitle {
+            font-weight: $standard-bold;
+          }
+        }
+      }
+
+      .sizeContainer {
+        grid-column: span 2;
+        margin-top: 3em;
+
+        .sizeHeading {
+          font-size: 1.3em;
+          margin-bottom: 1em;
+        }
+
+        .sizeButton {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+
+  // Brand
+
+  .brand {
+    .brandLogo {
+      width: 4em;
+      margin-bottom: 2em;
+    }
+
+    .brandName {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+    }
+
+    .descriptionContainer {
+      font-size: 1rem;
+      text-align: left;
+      margin: 0 4em;
+
+      .descriptionHeading {
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  .user {
+    .userHeading {
+      font-size: 22px;
+      margin-bottom: 0.3em;
+    }
+
+    .userHeading2 {
+      font-size: 18px;
+    }
+
+    .userP {
+      margin-top: 2em;
+      font-size: 15px;
+
+      .userHighlight {
+        color: $primary-color;
+        font-weight: $standard-bold;
+      }
+    }
+
+    .addressContainer {
+      margin-top: 1em;
+
+      font-size: 15px;
+    }
+
+    .userOrders {
+      font-size: 15px;
+      margin: 1em 4em;
+    }
+
+    .userTickets {
+      font-size: 15px;
+    }
+  }
+
+  .role {
+    .roleHeading {
+      font-size: 22px;
+    }
+
+    .listContainer {
+      margin-top: 1em;
+      font-size: 15px;
+      text-align: left;
+
+      .listHeading {
+        font-size: 18px;
+        margin-bottom: 1em;
+      }
+
+      .useCaseList {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
+
+  .ticket {
+    .ticketHeading {
+      font-size: 22px;
+    }
+
+    .ticketP {
+      margin-top: 1em;
+      font-size: 18px;
+
+      .ticketHiglight {
+        color: $primary-color;
+      }
+    }
+
+    .ticketInfoContainer {
+      margin-top: 2em;
+
+      font-size: 16px;
+
+      .infoHeading {
+        font-size: 18px;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

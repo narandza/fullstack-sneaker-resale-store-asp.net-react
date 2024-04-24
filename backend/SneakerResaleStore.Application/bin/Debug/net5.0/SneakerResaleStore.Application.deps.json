@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SneakerResaleStore.Application/1.0.0": {
+        "dependencies": {
+          "SneakerResaleStore.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SneakerResaleStore.Application.dll": {}
+        }
+      },
+      "SneakerResaleStore.Domain/1.0.0": {
+        "runtime": {
+          "SneakerResaleStore.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SneakerResaleStore.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SneakerResaleStore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

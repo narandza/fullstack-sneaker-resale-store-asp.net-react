@@ -1,0 +1,56 @@
+@import "../../../styles/variables.scss";
+
+.category {
+  margin: 0em $mobile-side-margin;
+
+  .backButton {
+    cursor: pointer;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 1em;
+    font-family: $roboto;
+    gap: 3px;
+  }
+
+  .addButtonContainer {
+    margin-top: 1em;
+
+    .addButton {
+      width: 25%;
+      height: 40px;
+      font-weight: $standard-bold;
+
+      @media (min-width: $laptop) {
+        width: 150px;
+      }
+    }
+  }
+
+  .filterDataContainer {
+    margin-top: 1em;
+
+    .filterHeading {
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 0.4em;
+      cursor: pointer;
+    }
+  }
+
+  .tableContainer {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+
+    .totalItems {
+      margin-top: 1em;
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .category {
+    margin: 0em 1em;
+  }
+}

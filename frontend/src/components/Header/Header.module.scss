@@ -1,0 +1,187 @@
+@import "../../styles/variables.scss";
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: $header-hero-vh;
+  background: rgb(255, 255, 244);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 244, 1) 40%,
+    rgba(255, 255, 244, 0.8) 70%,
+    rgba(255, 255, 244, 0.6) 80%,
+    rgba(255, 255, 244, 0) 100%
+  );
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: baseline;
+  margin: 0em;
+  gap: 20px;
+
+  .menuButton {
+    margin-left: 1em;
+    margin-top: 2em;
+    &:hover {
+      cursor: pointer;
+      transform: $transform-plus;
+      transition: $transition-ease-in-out;
+    }
+  }
+
+  .menuOpen {
+    transform: translateX(0);
+  }
+
+  .headerIcons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 1em;
+
+    .icon {
+      &:hover {
+        transform: $transform-plus;
+        transition: $transition-ease-in-out;
+        cursor: pointer;
+      }
+    }
+
+    .cartLink {
+      position: relative;
+
+      .cartItemsNumber {
+        color: $secondary-color;
+        text-align: center;
+        position: absolute;
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        top: 50%;
+        left: 37%;
+      }
+    }
+  }
+}
+
+// Logo
+
+.logo {
+  display: flex;
+  justify-content: center;
+
+  .logoText {
+    font-family: $proza_libre;
+    font-size: 34px;
+  }
+
+  &.logoMenuOpen {
+    margin-top: -1em;
+  }
+}
+
+// Mobile Navigation
+
+.mobileNav {
+  display: none;
+  background-color: $white-color;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+  &.showMenu {
+    display: block;
+  }
+
+  .xButton {
+    position: relative;
+    top: 1em;
+    left: 1em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .mobNavLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 3em;
+    font-family: $roboto;
+    font-size: 20px;
+
+    .navLink {
+      font-weight: $standard-bold;
+
+      .navLinkArrow {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+// Desktop Navigation
+
+.desktopNav {
+  display: none;
+  margin-top: 2em;
+
+  .deskNavLinks {
+    font-family: $roboto;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: $small-tablet) {
+}
+
+// large tablets and laptops
+
+@media screen and (min-width: $laptop) {
+  .header {
+    .menuButton {
+      display: none;
+    }
+
+    .desktopNav {
+      display: block;
+
+      .deskNavLinks {
+        padding-left: 1em;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+      }
+    }
+
+    .mobileNav {
+      display: none;
+    }
+
+    .headerIcons {
+      gap: 50px;
+    }
+  }
+}
+
+// desktop styles
+
+@media screen and (min-width: $desktop) {
+  .header {
+    .desktopNav {
+      .deskNavLinks {
+        font-size: 13px;
+        gap: 20px;
+      }
+    }
+  }
+}

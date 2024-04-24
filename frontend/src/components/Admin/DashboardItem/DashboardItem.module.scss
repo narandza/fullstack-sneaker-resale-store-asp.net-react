@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.dashboardItem {
+  max-width: 10em;
+  border-radius: $border-radius-small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 1.5em;
+  text-transform: capitalize;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+    transition: $transition-ease-in-out;
+  }
+
+  .itemText {
+    font-weight: $standard-bold;
+    font-size: 24px;
+  }
+
+  .iconWrapper {
+    margin: auto;
+  }
+}

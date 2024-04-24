@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerResaleStore.Domain", "SneakerResaleStore.Domain\SneakerResaleStore.Domain.csproj", "{85189975-E300-4862-B455-4E10ADB7FD5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerResaleStore.DataAccess", "SneakerResaleStore.DataAccess\SneakerResaleStore.DataAccess.csproj", "{C9DE3D32-0E7D-4FFD-9CBE-1553E5E8C640}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerResaleStore.API", "SneakerResaleStore.API\SneakerResaleStore.API.csproj", "{B5FDE367-C70A-473A-9CDA-489B5539DC55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerResaleStore.Application", "SneakerResaleStore.Application\SneakerResaleStore.Application.csproj", "{5E828C88-1803-4ED5-A6AE-A87E4137A801}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerResaleStore.Implementation", "SneakerResaleStore.Implementation\SneakerResaleStore.Implementation.csproj", "{E140374D-9A4A-467A-91EB-82F47746DF29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85189975-E300-4862-B455-4E10ADB7FD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85189975-E300-4862-B455-4E10ADB7FD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85189975-E300-4862-B455-4E10ADB7FD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85189975-E300-4862-B455-4E10ADB7FD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DE3D32-0E7D-4FFD-9CBE-1553E5E8C640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DE3D32-0E7D-4FFD-9CBE-1553E5E8C640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DE3D32-0E7D-4FFD-9CBE-1553E5E8C640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DE3D32-0E7D-4FFD-9CBE-1553E5E8C640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5FDE367-C70A-473A-9CDA-489B5539DC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FDE367-C70A-473A-9CDA-489B5539DC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FDE367-C70A-473A-9CDA-489B5539DC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FDE367-C70A-473A-9CDA-489B5539DC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E828C88-1803-4ED5-A6AE-A87E4137A801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E828C88-1803-4ED5-A6AE-A87E4137A801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E828C88-1803-4ED5-A6AE-A87E4137A801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E828C88-1803-4ED5-A6AE-A87E4137A801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E140374D-9A4A-467A-91EB-82F47746DF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E140374D-9A4A-467A-91EB-82F47746DF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E140374D-9A4A-467A-91EB-82F47746DF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E140374D-9A4A-467A-91EB-82F47746DF29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {810D75C6-75A1-40A0-841E-6BA0BE7F2BD8}
+	EndGlobalSection
+EndGlobal

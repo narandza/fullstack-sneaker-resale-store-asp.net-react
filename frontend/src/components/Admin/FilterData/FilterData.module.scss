@@ -1,0 +1,54 @@
+@import "../../../styles/variables.scss";
+
+.filterData {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); // Adjust the minmax value as needed
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: $light-grey-color;
+  border-radius: $border-radius-big;
+
+  .optionContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    .label {
+      text-transform: capitalize;
+      font-weight: $standard-bold;
+      margin: 0.5em 0;
+    }
+
+    .optionInput {
+      width: 100%;
+      height: 2em;
+      border: none;
+      border-radius: $border-radius-small;
+    }
+  }
+
+  .buttonContainer {
+    grid-column: 1 / -1;
+    justify-self: center;
+
+    .filterButton {
+      background-color: $primary-color;
+      color: $white-color;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: $border-radius-small;
+      cursor: pointer;
+      font-weight: $standard-bold;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

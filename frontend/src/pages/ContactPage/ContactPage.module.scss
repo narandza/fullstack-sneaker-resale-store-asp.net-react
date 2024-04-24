@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  .contactHeading {
+    margin-bottom: 3em;
+    font-size: 21px;
+  }
+
+  .contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+
+    margin-bottom: 5em;
+
+    .contactInfoContainer {
+      .infoHeading {
+        text-align: let;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .infoItem {
+        display: flex;
+        align-items: center;
+        margin-top: 2em;
+        gap: 1em;
+        font-size: 14px;
+
+        .itemName {
+          font-family: $inter;
+
+          .itemValue {
+            font-weight: $standard-bold;
+          }
+        }
+      }
+
+      .contactImageContainer {
+        margin-top: 5em;
+        .contactImage {
+          border-radius: 20px;
+          width: 400px;
+        }
+      }
+    }
+
+    .reportProblem {
+      font-family: $inter;
+      padding: 0em 6em;
+
+      .reportHeading {
+        font-size: 18px;
+        margin-bottom: 1em;
+      }
+
+      .ticketLabel {
+        margin-top: 1em;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: $standard-bold;
+      }
+
+      .reportTextArea {
+        height: 300px;
+        margin-bottom: 3em;
+      }
+    }
+  }
+}

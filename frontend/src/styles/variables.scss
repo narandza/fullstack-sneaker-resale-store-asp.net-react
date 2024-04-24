@@ -1,0 +1,66 @@
+// media queries
+
+$small-tablet: 620px;
+$laptop: 960px;
+$desktop: 1200px;
+
+// colors
+
+$primary-color: #1e3e76;
+$secondary-color: #fafba5;
+$black-color: #080808;
+$dark-grey-color: #36454f;
+$light-grey-color: #cfcfcf;
+$white-color: #fffff4;
+$red-error-color: #ff3333;
+
+// fonts
+
+@font-face {
+  font-family: "Proza_Libre";
+  src: url("../assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+$proza_libre: "Proza_Libre", sans-serif;
+$roboto: "Roboto", sans-serif;
+$inter: "Inter", sans-serif;
+
+$standard-bold: 600;
+
+// background
+$hero-image-MJ: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  url(../assets/images/hero-2.jpg);
+
+// variables
+
+$transform-plus: scale(1.1);
+$transition-ease-in-out: 0.3s ease-in-out;
+
+$header-hero-vh: 18vh;
+
+$group-items-gap: 0.85em;
+
+$border-radius-small: 5px;
+$border-radius-big: 10px;
+
+//mobile styles
+
+$mobile-side-margin: 1em;
+
+// laptop styles
+
+$laptop-side-margin: 5em;
+
+// desktop styles
+
+$desktop-side-margin: 10em;

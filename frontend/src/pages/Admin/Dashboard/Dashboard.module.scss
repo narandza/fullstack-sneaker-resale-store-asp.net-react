@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+
+.dashboard {
+  margin: 0em $mobile-side-margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .dashboardHeading {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+
+    .headingEmail {
+      color: $primary-color;
+      font-size: 20px;
+      text-transform: lowercase;
+    }
+  }
+
+  .dashboardItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4em;
+  }
+}
+
+@media screen and (min-width: $small-tablet) {
+  .dashboard {
+    margin: 0em 10em;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .dashboard {
+    margin: 0em 15em;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .dashboard {
+    margin: 0em 20em;
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+
+.productDetail {
+  margin: 0em $mobile-side-margin;
+
+  .productInfo {
+    margin: 5em 0em;
+    display: flex;
+    flex-direction: column;
+
+    .productHeading {
+      font-size: 3em;
+      text-transform: capitalize;
+    }
+
+    .addToFavoirtesButtonContainer {
+      margin-top: 1em;
+      font-size: 2.4em;
+
+      .addToFavoirtesButton {
+        cursor: pointer;
+
+        &:hover {
+          transform: $transform-plus;
+          transition: $transition-ease-in-out;
+        }
+      }
+    }
+
+    .productPrice {
+      margin-top: 1em;
+      font-size: 2em;
+    }
+
+    .productSizes {
+      margin-top: 5em;
+      display: flex;
+      gap: 1em;
+    }
+
+    .productAddToCart {
+      align-self: center;
+    }
+
+    .productDescription {
+      margin-top: 5em;
+    }
+  }
+
+  .productRecomendation {
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .productDetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 0em $laptop-side-margin;
+
+    .productInfo {
+      font-size: 11px;
+      margin: 0;
+
+      .addToFavoirtesButtonContainer {
+        display: flex;
+      }
+
+      .productPrice {
+        font-size: 18px;
+        font-weight: $standard-bold;
+      }
+
+      .productAddToCart {
+        margin-top: 2em;
+      }
+
+      .productDescription {
+        margin-top: 2em;
+      }
+    }
+
+    .productRecomendation {
+      margin-top: 3em;
+      grid-column: span 2;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .productDetail {
+    margin: 0em $desktop-side-margin;
+  }
+}

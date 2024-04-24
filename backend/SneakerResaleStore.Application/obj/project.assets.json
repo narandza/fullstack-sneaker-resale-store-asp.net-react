@@ -1,0 +1,90 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "SneakerResaleStore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SneakerResaleStore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SneakerResaleStore.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SneakerResaleStore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SneakerResaleStore.Domain/SneakerResaleStore.Domain.csproj",
+      "msbuildProject": "../SneakerResaleStore.Domain/SneakerResaleStore.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "SneakerResaleStore.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dimitrije\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\dimitrije\\Desktop\\diplomski\\final\\backend\\SneakerResaleStore.Application\\SneakerResaleStore.Application.csproj",
+      "projectName": "SneakerResaleStore.Application",
+      "projectPath": "C:\\Users\\dimitrije\\Desktop\\diplomski\\final\\backend\\SneakerResaleStore.Application\\SneakerResaleStore.Application.csproj",
+      "packagesPath": "C:\\Users\\dimitrije\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dimitrije\\Desktop\\diplomski\\final\\backend\\SneakerResaleStore.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\dimitrije\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\dimitrije\\Desktop\\diplomski\\final\\backend\\SneakerResaleStore.Domain\\SneakerResaleStore.Domain.csproj": {
+              "projectPath": "C:\\Users\\dimitrije\\Desktop\\diplomski\\final\\backend\\SneakerResaleStore.Domain\\SneakerResaleStore.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.321\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

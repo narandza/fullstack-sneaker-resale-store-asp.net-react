@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.shopPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 100px 20px;
+
+  .paginationElement {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 550;
+
+    .disabled {
+      color: $light-grey-color;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      color: $primary-color;
+      transform: $transform-plus;
+      transition: $transition-ease-in-out;
+    }
+  }
+
+  .paginationElementActive {
+    color: $primary-color;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .shopPagination {
+    margin: 2em 0em 3em;
+  }
+}

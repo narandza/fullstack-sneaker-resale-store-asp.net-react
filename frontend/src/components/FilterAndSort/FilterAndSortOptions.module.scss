@@ -1,0 +1,126 @@
+@import "../../styles/variables.scss";
+
+.fsOptions {
+  margin: 10px 90px;
+  text-transform: capitalize;
+  font-size: 10px;
+
+  .filterPriceRange {
+    .priceRangePriceInput {
+      display: flex;
+      margin: 10px 5px;
+
+      .priceInputField {
+        height: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .inputPrice {
+          width: 50%;
+          height: 100%;
+          margin-left: 12px;
+          outline: none;
+          border: 1px solid $light-grey-color;
+          border-radius: $border-radius-small;
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .filterMultipleSelection {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    cursor: pointer;
+
+    .multipleSelectionField {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .multipleSelectionButtons {
+      display: flex;
+      margin-top: 1em;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+
+      .itemBtn {
+        font-size: 15px;
+        transition: $primary-color 0.3s;
+        margin-right: 1em;
+      }
+
+      .itemCheckBox {
+        appearance: none;
+        margin-right: 5px;
+        border: 2px solid $dark-grey-color;
+        background-color: $white-color;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+
+        &:hover {
+          background-color: $secondary-color;
+          transition: $transition-ease-in-out;
+        }
+
+        &:checked {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .fsHorizontalLine {
+    margin: 15px 20px;
+  }
+
+  .sortBy {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+
+    .sortByDropDown {
+      width: 150px;
+      appearance: none;
+      padding: 8px;
+      border: 1px solid $light-grey-color;
+      border-radius: $border-radius-small;
+      cursor: pointer;
+      text-align: center;
+      text-transform: capitalize;
+
+      &:hover {
+        border-color: $primary-color;
+        transition: $transition-ease-in-out;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $dark-grey-color;
+      }
+
+      .dropDownOption {
+        padding: 8px;
+      }
+    }
+  }
+
+  .buttonsContainer {
+    margin-top: 1em;
+    display: flex;
+    gap: 2em;
+
+    .filterButton {
+      padding: 0.5em;
+      background-color: $white-color;
+      border-radius: $border-radius-small;
+      cursor: pointer;
+    }
+  }
+}

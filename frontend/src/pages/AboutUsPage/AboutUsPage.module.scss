@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.about {
+  margin-bottom: 2em;
+
+  .aboutHeadingContainer {
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: capitalize;
+  }
+
+  .aboutContent {
+    margin: 0em 1em;
+
+    .aboutSection {
+      .sectionHeading {
+        font-size: 22px;
+        margin-bottom: 0.4em;
+      }
+
+      .sectionContent {
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 2em;
+
+        .sectionText {
+          text-align: justify;
+          padding: 0em 3em;
+          line-height: 25px;
+          text-wrap: balance;
+        }
+
+        .sectionImage {
+          width: 30em;
+          border-radius: $border-radius-big;
+        }
+      }
+
+      .second {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

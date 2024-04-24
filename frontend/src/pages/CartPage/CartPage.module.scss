@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+
+  .cartHeader {
+    text-transform: capitalize;
+    margin-bottom: 2em;
+  }
+
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .cartTotal {
+    display: flex;
+    align-items: center;
+    margin: 4em 0em 5em;
+    font-size: 18px;
+
+    .totalPrice {
+      margin-left: auto;
+      font-weight: $standard-bold;
+    }
+  }
+
+  .checkOutBtn {
+    width: 100%;
+    margin-bottom: 5em;
+  }
+
+  .emptyCart {
+    font-size: 18px;
+  }
+}
+
+// small tablet
+
+@media screen and (min-width: $small-tablet) {
+  .cart {
+    margin: 0em 5em;
+  }
+}
+
+// desktop
+
+@media screen and (min-width: $desktop) {
+  .cart {
+    margin: 0em 15em;
+  }
+}

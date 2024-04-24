@@ -1,0 +1,110 @@
+@import "../../../styles/variables.scss";
+
+.addNew {
+  margin: 0 $mobile-side-margin;
+  font-family: $inter;
+
+  .backButton {
+    cursor: pointer;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 22px;
+    font-family: $roboto;
+    gap: 3px;
+  }
+
+  .dataEntry {
+    margin: 3em 0em;
+
+    display: flex;
+    justify-content: center;
+
+    .dataForm {
+      font-size: 13px;
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      gap: 3em;
+
+      .formItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .dataLabel {
+          width: 100%;
+          font-size: 1.5em;
+        }
+
+        .imageUploadContainer {
+          width: 250px;
+          text-align: center;
+
+          .imageContainer {
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+          }
+        }
+
+        .itemError {
+          margin-top: 10px;
+          font-size: 10px;
+          color: $red-error-color;
+          font-weight: $standard-bold;
+        }
+
+        .dropDown {
+          margin-top: 1em;
+          width: 100%;
+          height: 3em;
+          appearance: none;
+          padding: 8px;
+          border: 1px solid $light-grey-color;
+          border-radius: $border-radius-small;
+          cursor: pointer;
+          text-align: center;
+          text-transform: capitalize;
+
+          &:hover {
+            border-color: $primary-color;
+            transition: $transition-ease-in-out;
+          }
+
+          &:focus {
+            outline: none;
+            border-color: $dark-grey-color;
+          }
+
+          .dropDownOption {
+            padding: 8px;
+          }
+        }
+      }
+      .submitButtonContainer {
+        .submitButton {
+          width: 100%;
+          margin-top: 20px;
+        }
+
+        .formError {
+          font-weight: $standard-bold;
+          color: $red-error-color;
+        }
+      }
+
+      .userName {
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+
+        .emailExtension {
+          font-weight: $standard-bold;
+        }
+      }
+    }
+  }
+}

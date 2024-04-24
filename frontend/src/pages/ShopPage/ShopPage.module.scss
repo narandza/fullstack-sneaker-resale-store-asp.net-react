@@ -1,0 +1,88 @@
+@import "../../styles/variables.scss";
+.shop {
+  margin: -30px 20px 50px;
+
+  .shopHeader {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28px;
+  }
+
+  .brandDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    font-size: 12px;
+
+    .brandLogo {
+      object-fit: contain;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .filterAndSort {
+    .fsTop {
+      margin: 5px 30px;
+      display: flex;
+      align-items: center;
+
+      .fsIcon {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .fsHeader {
+        font-size: 20px;
+        margin-left: 2px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .fsProducts {
+        font-size: 12px;
+        margin-left: auto;
+        color: $dark-grey-color;
+      }
+    }
+  }
+
+  .noProducts {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// laptop styles
+
+@media screen and (min-width: $laptop) {
+  .shop {
+    margin: 0 $laptop-side-margin;
+  }
+}
+
+// desktop styles
+
+@media screen and (min-width: $desktop) {
+  .shop {
+    margin: 0 $desktop-side-margin;
+
+    .filterAndSort {
+      .fsHeader {
+        font-size: 25px;
+      }
+      .fsProducts {
+        font-size: 15px;
+      }
+    }
+  }
+}

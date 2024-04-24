@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.checkOut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em $mobile-side-margin 5em;
+  gap: 1em;
+
+  .headingContainer {
+    .heading {
+      font-size: 1.5em;
+    }
+  }
+
+  .paymentMethod {
+    font-size: 14px;
+    margin-top: 3em;
+
+    .methodsContainer {
+      margin-top: 1em;
+      display: flex;
+      gap: 3em;
+
+      .singleMethod {
+        display: flex;
+        align-items: center;
+
+        .methodName {
+          text-transform: capitalize;
+          font-weight: $standard-bold;
+          margin-right: 2em;
+        }
+      }
+    }
+  }
+
+  .shippingPreview {
+    font-size: 14px;
+    margin-top: 3em;
+
+    .shippingInfo {
+      margin-top: 1em;
+
+      .infoData {
+        font-size: 16px;
+        font-weight: $standard-bold;
+      }
+    }
+  }
+
+  .orderButtonContainer {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+  }
+}
